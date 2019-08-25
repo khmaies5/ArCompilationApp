@@ -1,4 +1,4 @@
-package com.hack.innovationstar.cloudanchorstest;
+package com.example.arcoreapp;
 
 import android.app.Activity;
 import android.content.Context;

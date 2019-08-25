@@ -1,16 +1,17 @@
-package com.hack.innovationstar.cloudanchors;
+package com.example.arcoreapp;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.InputFilter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
+
+import androidx.fragment.app.DialogFragment;
 
 /** A DialogFragment for the Resolve Dialog Box. */
 public class ResolveDialogFragment extends DialogFragment {

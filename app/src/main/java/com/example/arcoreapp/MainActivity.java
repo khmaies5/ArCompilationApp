@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button sceneformButton, imageButton;
+    Button sceneformButton, imageButton, cloudButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         sceneformButton = (Button) findViewById(R.id.sceneformButton);
         imageButton = (Button) findViewById(R.id.ImageButton);
+        cloudButton = (Button) findViewById(R.id.cloudButton);
         sceneformButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AugmentedImagesActivity.class));
+            }
+        });
+
+        cloudButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CloudAnchorActivity.class));
             }
         });
     }

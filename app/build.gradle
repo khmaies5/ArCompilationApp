@@ -31,9 +31,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'com.google.ar:core:1.11.0'
+    implementation 'com.google.ar:core:1.4.0'
     // Provides ArFragment, and other UX resources.
-    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.11.0'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.4.0'
+    implementation 'com.android.support:design:28'
 }
 
 
@@ -52,3 +53,9 @@ sceneform.asset('sampledata/car/car.obj',
         'default',
         'sampledata/car/car.sfa',
         'src/main/assets/car')
+
+
+sceneform.asset('sampledata/cat/cat.obj',
+        'default',
+        'sampledata/cat/cat.sfa',
+        'src/main/assets/cat')

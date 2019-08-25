@@ -44,7 +44,8 @@ public class AugmentedImagesActivity extends AppCompatActivity {
 
 
     }
-
+  // on every frame check if the the image has been detected
+    // if yes check if its the car image and add the car model then set shouldaddmodel to false so that it wont add more than 1 model
     private void onUpdateFrame(FrameTime frameTime){
 
         Frame frame = arFragment.getArSceneView().getArFrame();

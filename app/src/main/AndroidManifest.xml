@@ -3,6 +3,7 @@
     package="com.example.arcoreapp">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <uses-feature
         android:name="android.hardware.camera.ar"
@@ -15,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AugmentedImagesActivity"></activity>
+        <activity android:name=".CloudAnchorActivity"></activity>
+        <activity android:name=".AugmentedImagesActivity" />
         <activity android:name=".SceneformActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -24,7 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <meta-data
+            android:name="com.google.android.ar.API_KEY"
+            android:value="AIzaSyAmKs51yd_EFn-ZaRf9Zv56uK53n-TJRZs"/>
         <meta-data
             android:name="com.google.ar.core"
             android:value="require" />
