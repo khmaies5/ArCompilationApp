@@ -9,18 +9,25 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button sceneformButton;
+    Button sceneformButton, imageButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         sceneformButton = (Button) findViewById(R.id.sceneformButton);
-
+        imageButton = (Button) findViewById(R.id.ImageButton);
         sceneformButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SceneformActivity.class));
+            }
+        });
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AugmentedImagesActivity.class));
             }
         });
     }
